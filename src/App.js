@@ -5,6 +5,8 @@ import Navbar from 'components/Navbar'
 import Sidebar from 'components/Sidebar'
 import Home from 'containers/Home'
 import About from 'containers/About'
+import Skills from 'containers/Skills'
+import Contact from 'containers/Contact'
 
 import './App.scss';
 
@@ -17,6 +19,8 @@ function App() {
         <div className="container container-fluid">
           <Home />
           <About />
+          <Skills />
+          <Contact />
         </div>
       </div>
     </Router>

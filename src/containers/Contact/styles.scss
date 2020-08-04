@@ -1,0 +1,73 @@
+@import 'styles/_variables.scss';
+@import 'styles/_mixin.scss';
+
+.contact {
+  margin-top: 50px + $gutter-xl;
+  height: calc(100vh - 50px);
+  position: relative;
+
+  @media only screen and (max-width: $screen-sm) {
+    margin-top: 300px;
+  }
+
+  .row, .content {
+    height: 100%;
+  }
+
+  .content {
+    margin: auto;
+    @include flexbox;
+    @include align-items(center);
+    @include justify-content(center);
+    flex-direction: column;
+    &-tag {
+      color: $c-grey-base;
+      padding-left: $gutter-sm;
+    }
+    &-title {
+      font-size: 80px;
+      line-height: 120px;
+
+      @media only screen and (max-width: $screen-sm) {
+        font-size: 60px;
+        line-height: 60px;
+      }
+    }
+
+    &-copyright {
+      width: 100%; 
+      text-align: center; 
+      border-bottom: 1px solid $c-black-base; 
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+
+      span {
+        background:#fff; 
+        padding:0 10px; 
+      }
+    }
+
+    &-contact-list {
+      list-style: none;
+      width: 100%;
+      margin-top: $gutter-xl;
+      @include flexbox;
+      @include justify-content(space-around);
+      li {
+        a {
+          color: $c-black-base;
+          font-size: 50px;
+        }
+      }
+    }
+
+    @media only screen and (min-width: $screen-sm + 1) {
+      width: 550px;
+    }
+    @media only screen and (max-width: $screen-sm) {
+      padding: $gutter-md;
+      margin-left: $gutter-md;
+    }
+  }
+
+}

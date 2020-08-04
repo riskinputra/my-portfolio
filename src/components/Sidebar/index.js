@@ -33,11 +33,11 @@ function Sidebar() {
       path: '#skills',
       active: currentHash === "#skills"
     },
-    {
-      label: 'Experience',
-      path: '#experience',
-      active: currentHash === "#experience"
-    },
+    // {
+    //   label: 'Experience',
+    //   path: '#experience',
+    //   active: currentHash === "#experience"
+    // },
     {
       label: 'Contact',
       path: '#contact',
