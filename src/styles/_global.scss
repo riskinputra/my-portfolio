@@ -1,0 +1,143 @@
+//Default styles
+@import './_variables.scss';
+@import './_mixin.scss';
+@import './_extends.scss';
+// @import './_hljs.scss';
+
+html, * {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: $font-stack;
+  color: $c-grey-darken-2;
+}
+::placeholder {
+  color: $c-grey-lighten-2;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $c-grey-lighten-2;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $c-grey-lighten-2;
+}
+
+::selection {
+  background: $c-navy-base;
+  /* Safari */
+  color: #fff;
+}
+
+::-moz-selection {
+  background: $c-navy-base;
+  /* Firefox */
+  color: #fff;
+}
+
+input,
+optgroup,
+select,
+textarea {
+  font-family: $font-stack;
+}
+input[type=submit],
+button{
+  font-family: $font-heading;
+}
+
+a {
+  color: $c-blue-base;
+  text-decoration: none;
+
+  // Gets rid of tap active state
+  -webkit-tap-highlight-color: transparent;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin: 1rem 0 1rem 0;
+  font-family: $font-heading;
+  &.is-reset {
+    margin: 0;
+    line-height: 1em;
+  }
+}
+h1 {
+  font-size: (36/16) + rem;
+  small{
+    font-size: (32/16) + rem;
+  }
+}
+h2 {
+  font-size: (32/16) + rem;
+  small{
+    font-size: (24/16) + rem;
+  }
+}
+h3 {
+  font-size: (24/16) + rem;
+  small{
+    font-size: (18/16) + rem;
+  }
+}
+h4 {
+  font-size: (18/16) + rem;
+  small{
+    font-size: (16/16) + rem;
+  }
+}
+h5 {
+  font-size: (16/16) + rem;
+  small{
+    font-size: (14/16) + rem;
+  }
+}
+h6 {
+  font-size: (14/16) + rem;
+  small{
+    font-size: (11/16) + rem;
+  }
+}
+article {
+  p {
+    line-height: 1.5rem;
+  }
+}
+
+figure {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+figcaption {
+  font-size: $text-xs;
+  color: $c-grey-base;
+  font-style: italic;
+}
+dl {
+  dt {
+    color: $c-grey-darken-2;
+    padding: $gutter-xs 0;
+  }
+  dd {
+    color: $c-grey-base;
+    padding: $gutter-xs 0;
+  }
+}

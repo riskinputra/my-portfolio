@@ -1,0 +1,52 @@
+@import 'styles/_variables.scss';
+@import 'styles/_mixin.scss';
+
+.navbar {
+  height: 50px;
+  width: 100%;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  background-color: $c-white-base;
+
+  @include box-shadow(0 1px 0 rgba(0,0,0,.05));
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(space-between);
+
+  .logo {
+    display: inherit;
+    @include align-items(center);
+    &-navbar {
+      margin-left: $gutter-sm;
+    }
+  }
+
+  .contact {
+    display: inherit;
+    list-style: none;
+    margin-right: 50px;
+    @media only screen and (max-width: $screen-sm - 1) {
+      margin-right: $gutter-md;
+    }
+    li {
+      a {
+        padding: 0 $gutter-md;
+        color: $c-grey-base;
+        font-family: Courier New,Courier,monospace;
+        text-decoration: none;
+        &:hover {
+          color: $c-black-base;
+        }
+      }
+
+      &.email {
+        span {
+          @media only screen and (max-width: $screen-sm - 1) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

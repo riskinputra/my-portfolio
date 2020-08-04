@@ -1,0 +1,46 @@
+//Default styles
+@import 'styles/_variables.scss';
+@import 'styles/_mixin.scss';
+@import 'styles/_extends.scss';
+@import 'styles/_flexboxgrid.scss';
+@import 'styles/_library.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  &:hover, *:focus {outline: none}
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/**
+  * GENERAL HTML AND BODY STYLES
+  */
+html, body {
+  font-family             : $font-stack;
+  font-weight             : normal;
+  font-size               : $text-md;
+  line-height             : 150%;
+  overflow-x              : hidden;
+  color                   : $c-black-base;
+  box-sizing              : border-box;
+  height                  : 100%;
+  min-height              : 100%;
+
+  @media screen and (max-width: $screen-sm){
+    font-size : $text-sm;
+  }
+}
+
+#app {
+  position: relative;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

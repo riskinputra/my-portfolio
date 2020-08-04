@@ -1,0 +1,96 @@
+// Color variables
+$c-navy-base: #011148;
+$c-navy-lighten-1: #8088A3; // 
+$c-navy-lighten-2: #E5E7EC; // 
+$c-navy-darken-1: #010B2F; // 
+$c-navy-darken-2: #000516; // 
+
+$c-blue-base: #2791d9;
+$c-blue-lighten-1: #93C8EC; // 
+$c-blue-lighten-2: #BFDEF4; // 
+$c-blue-darken-1: #2283C4; // 
+$c-blue-darken-2: #1F74AE; // 
+
+$c-skyblue-base: #33beef;
+$c-skyblue-lighten-1: #99DEF7; // 
+$c-skyblue-lighten-2: #C2EBFA; // 
+$c-skyblue-darken-1: #1BB6ED; // 
+$c-skyblue-darken-2: #11A8DE; // 
+
+$c-green-base: #1BC47D;
+$c-green-lighten-1: #8DE1BE; //
+$c-green-lighten-2: #BBEDD8; // 
+$c-green-darken-1: #18B070; // 
+$c-green-darken-2: #159C64; // 
+
+$c-red-base: #EF4344;
+$c-red-lighten-1: #F7A1A1; // 
+$c-red-lighten-2: #FDE8E8; // 
+$c-red-darken-1: #ED2C2D; // 
+$c-red-darken-2: #EB1415; // 
+
+$c-yellow-base: #FFCE07;
+$c-yellow-lighten-1: #FFE683; // 
+$c-yellow-lighten-2: #FFF1BA; // 
+$c-yellow-darken-1: #EDBE00; // 
+$c-yellow-darken-2: #D3A900; // 
+
+$c-orange-base: #FF9407;
+$c-orange-lighten-1: #FFC983; // 
+$c-orange-lighten-2: #FFDFB5; // 
+$c-orange-darken-1: #E58406; // 
+$c-orange-darken-2: #CC7605; // 
+
+$c-magenta-base: #D92779;
+$c-magenta-lighten-1: #EC93BC; // 
+$c-magenta-lighten-2: #F3BED7; // 
+$c-magenta-darken-1: #C2236C; // 
+$c-magenta-darken-2: #AD1F60; // 
+
+$c-grey-base: #757575;
+$c-grey-lighten-1: #BABABA; //  #a3a3a3
+$c-grey-lighten-2: #D5D5D5; //
+$c-grey-lighten-3: #E3E3E3; //
+$c-grey-lighten-4: #F1F1F1; // #f5f5f5
+$c-grey-lighten-5: #F6F6F6; // 
+$c-grey-darken-1: #3A3A3A; // 
+$c-grey-darken-2: #222222; //
+
+$c-black-base: #000000;
+$c-white-base: #FFFFFF;
+
+$c-border: $c-grey-lighten-2;
+
+// Text sizes
+$text-huge:36px;
+$text-xxl:32px;
+$text-xl:24px;
+$text-lg:18px;
+$text-md:16px;
+$text-sm:14px;
+$text-xs:12px;
+$text-xxs:11px;
+
+//screen size
+$screen-lg:1200px; // 1200px //75em
+$screen-md:992px; // 992px //62em
+$screen-sm:768px;// 768px //48em
+
+// gutter - used for both padding and margin
+$gutter-md: 16px;
+$gutter-xxl: $gutter-md * 4; //64px
+$gutter-xl: $gutter-md * 2; //32px
+$gutter-lg: $gutter-md * 1.5; //24px
+$gutter-sm: $gutter-md / 2; //8px
+$gutter-xs: $gutter-md / 4; //4px
+$gutter-xxs: $gutter-md / 8; //2px
+
+$c-bg-color: rgba(white, 0.8);
+$card-box-shadow: 0 0 0 1px rgba(black, 0.05), 0 2px 5px 0 rgba(black, 0.05);
+
+// font family
+$font-heading: 'Spartan', sans-serif;
+$font-stack: 'Spartan', sans-serif;
+$font-bold: 600;
+$font-regular: 400;
+
