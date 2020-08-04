@@ -14,17 +14,17 @@ function Navbar() {
       <ul className="contact">
         <li>
           <a href="https://www.linkedin.com/in/riskinputra/" target="_blank" rel="noopener noreferrer">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <i className="fa fa-linkedin-square" aria-hidden="true"></i>
           </a>
         </li>
         <li>
           <a href="https://github.com/riskinputra" target="_blank" rel="noopener noreferrer">
-            <i class="fa fa-github-square" aria-hidden="true"></i>
+            <i className="fa fa-github-square" aria-hidden="true"></i>
           </a>
         </li>
         <li className="email">
           <a href="mailto:riski.n.putra@gmail.com">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <i className="fa fa-envelope" aria-hidden="true"></i>
             <span className="ml-xs-2">riski.n.putra@gmail.com</span>
           </a>
         </li>
