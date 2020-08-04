@@ -42,7 +42,7 @@ html {
   scroll-snap-type: y mandatory;
 }
 
-section {
+section, a.logo {
   scroll-snap-align: start;
 }
 

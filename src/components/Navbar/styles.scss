@@ -16,6 +16,7 @@
 
   .logo {
     display: inherit;
+    cursor: pointer;
     @include align-items(center);
     &-navbar {
       margin-left: $gutter-sm;

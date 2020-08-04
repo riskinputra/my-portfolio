@@ -7,10 +7,10 @@ import './styles.scss'
 function Navbar() {
   return (
     <div className="navbar">
-      <div className="logo">
+      <a className="logo" href="#home">
         <img src={icon} alt="icon" className="icon" />
         <img src={logoNavbar} alt="logo" className="logo-navbar"/>
-      </div>
+      </a>
       <ul className="contact-list">
         <li>
           <a href="https://www.linkedin.com/in/riskinputra/" target="_blank" rel="noopener noreferrer">
