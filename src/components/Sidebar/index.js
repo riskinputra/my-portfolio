@@ -1,32 +1,47 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { NavLink} from "react-router-dom"
+import { useLocation } from 'react-router-dom';
+
 import './styles.scss'
 
 function Sidebar() {
+  const location = useLocation()
+  useEffect(() => {}, [location])
+
+  const currentHash = window.location.hash
   const menus = [
     {
       label: 'Home',
-      path: '#home'
+      path: '#home',
+      active: currentHash === "" || currentHash === "#home"
     },
     {
       label: 'About',
-      path: '#about'
+      path: '#about',
+      active: currentHash === "#about"
     },
     {
       label: 'Skills',
-      path: '#skills'
+      path: '#skills',
+      active: currentHash === "#skills"
     },
     {
       label: 'Experience',
-      path: '#experience'
+      path: '#experience',
+      active: currentHash === "#experience"
     },
     {
       label: 'Contact',
-      path: '#contact'
+      path: '#contact',
+      active: currentHash === "#contact"
     }
   ]
   const listMenu = menus.map((menu, index) => (
     <li className="menu-item" key={index}>
-      <a href={menu.path}>{menu.label}</a>
+      <NavLink to={menu.path} activeClassName={menu.active ? 'active' : ''}>
+        {menu.label}
+      </NavLink>
+      {/* <a href={menu.path} className={menu.active ? 'active' : ''}>{menu.label}</a> */}
     </li>
   ))
   return (

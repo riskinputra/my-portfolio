@@ -69,6 +69,7 @@
         &.active {
           color: $c-grey-base;
           &:after {
+            width: 100%;
             background-color: $c-grey-base;
           }
         }
