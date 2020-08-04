@@ -1,0 +1,51 @@
+@import 'styles/_variables.scss';
+@import 'styles/_mixin.scss';
+
+.about {
+  margin-top: 50px + $gutter-xl;
+  height: calc(100vh - 50px);
+  position: relative;
+
+  .row, .title, .content {
+    height: 100%;
+  }
+
+  .title {
+    @include flexbox;
+    @include align-items(flex-start);
+    @include justify-content(center);
+    flex-direction: column;
+    padding: $gutter-md;
+
+    div {
+      padding-left: $gutter-sm;
+    }
+    h1 {
+      font-size: 80px;
+      line-height: 80px;
+
+      @media only screen and (max-width: $screen-sm) {
+        font-size: 50px;
+        line-height: 50px;
+      }
+    }
+    @media only screen and (max-width: $screen-md) {
+      margin-left: $gutter-md;
+    }
+  }
+
+  .content {
+    padding: $gutter-md;
+    @include flexbox;
+    @include align-items(center);
+    @include justify-content(center);
+
+    .text {
+      width: 435px;
+    }
+
+    @media only screen and (max-width: $screen-md) {
+      margin-left: $gutter-md;
+    }
+  }
+}

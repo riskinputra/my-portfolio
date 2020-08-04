@@ -36,6 +36,16 @@ html, body {
   }
 }
 
+html {
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(calc(100vh - 50px));
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
 #app {
   position: relative;
 }

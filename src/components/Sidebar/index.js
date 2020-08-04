@@ -6,7 +6,15 @@ import './styles.scss'
 
 function Sidebar() {
   const location = useLocation()
-  useEffect(() => {}, [location])
+  useEffect(() => {
+    const hash = location.hash || '#home'
+
+    setTimeout(() => {
+      const id = hash.replace('#', '')
+      const element = document.getElementById(id)
+      if (element) element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})
+    }, 0)
+  }, [location])
 
   const currentHash = window.location.hash
   const menus = [
