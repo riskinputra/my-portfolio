@@ -1,4 +1,3 @@
-import { useRef } from 'react'
 import type { NextPage } from 'next'
 
 import Navbar from '../common/components/elements/Navbar/Navbar'
@@ -10,7 +9,6 @@ import Work from '../common/components/ui/Work/Work'
 import { fetchAPI } from '../lib/api'
 
 const Home: NextPage = ({ experiences, works }: any) => {
-  const sectionRef = useRef()
 
   return (
     <div className='wrapper'>
@@ -24,9 +22,9 @@ const Home: NextPage = ({ experiences, works }: any) => {
               </div>
             </div>
             <div className="w-full md:w-2/3 -px-0 md:-px-2">
-              <About ref={sectionRef} />
-              <Experience ref={sectionRef}  experiences={experiences} />
-              <Work ref={sectionRef} works={works} />
+              <About />
+              <Experience experiences={experiences} />
+              <Work works={works} />
             </div>
           </div>
         </main>

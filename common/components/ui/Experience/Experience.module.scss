@@ -60,7 +60,7 @@
         margin-bottom: 2px;
         @apply text-2xl;
         @apply font-medium;
-        color: var(--black-light-1);
+        color: var(--white);
 
         span {
           color: var(--orange);
@@ -69,7 +69,7 @@
 
       .job-panel-time {
         margin-bottom: 25px;
-        color: var(--gray);
+        color: var(--gray-light);
         font-family: var(--font-mono);
         font-size: 13px;
       }

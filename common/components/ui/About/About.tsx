@@ -1,7 +1,7 @@
 import styles from "./About.module.scss";
 import Image from "next/image";
 
-const About = ({ ref }: any) => {
+const About = () => {
   const skills = [
     { name: "Javascript" },
     { name: "Vue" },
@@ -14,7 +14,7 @@ const About = ({ ref }: any) => {
   ));
 
   return (
-    <section id="about" ref={ref} className={styles["about-container"]}>
+    <section id="about" className={styles["about-container"]}>
       <h2 className="section-title">About</h2>
 
       <div className={styles["about-content"]}>

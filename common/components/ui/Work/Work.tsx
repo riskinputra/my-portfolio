@@ -3,7 +3,7 @@ import NextImage from "../../elements/Image/Image";
 
 import styles from "./Work.module.scss";
 
-const Work = ({ works, ref }: any) => {
+const Work = ({ works }: any) => {
   const listProject = works?.map((work: any, index: number) => (
     <li className={styles['work-item']} key={index}>
       <div className={styles['work-item-content']}>
@@ -29,7 +29,7 @@ const Work = ({ works, ref }: any) => {
   ));
 
   return (
-    <section id="work" ref={ref} className={styles['work-container']}>
+    <section id="work" className={styles['work-container']}>
       <h2 className="section-title">Some Things I&apos;ve Built</h2>
 
       <ul className={styles['work-list']}>{listProject}</ul>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Experience.module.scss";
 
-const Experience = ({ experiences, ref }: any) => {
+const Experience = ({ experiences }: any) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const jobsList = experiences?.map((job: any, index: number) => {
     return (
@@ -33,7 +33,7 @@ const Experience = ({ experiences, ref }: any) => {
   );
 
   return (
-    <section id="experience" ref={ref} className={styles["exp-container"]}>
+    <section id="experience" className={styles["exp-container"]}>
       <h2 className="section-title">Where I&apos;ve Worked</h2>
 
       <div className={styles["exp-content"]}>

@@ -1,9 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from "next/router"
 
 import styles from './Navbar.module.scss'
 
 const Navbar = () => {
+  const router = useRouter()
   const menus = [
     { 
       path: 'about',
@@ -36,7 +38,7 @@ const Navbar = () => {
           <ol data-testid='navbar-menus' aria-labelledby='menus-heading' className={styles['nav-menu-list']}>
             { menus.map((menu, index) => (
               <li key={index}>
-                <a href={`/#${menu.path}`}>{menu.label}</a>
+                <a onClick={() => router.push(`/#${menu.path}`)}>{menu.label}</a>
               </li>
             )) }
           </ol>

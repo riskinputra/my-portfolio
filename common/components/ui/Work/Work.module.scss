@@ -36,7 +36,7 @@
         .content-type {
           margin: 10px 0px;
           color: var(--orange);
-          font-family: 'Space Mono', monospace;
+          font-family: var(--font-mono);
           font-size: 13px;
           font-weight: 400;      
         }
@@ -73,8 +73,8 @@
 
           li {
             margin: 0px 20px 5px 0px;
-            color: var(--black-light-2);
-            font-family: 'Space Mono', monospace;
+            color: var(--orange);
+            font-family: var(--font-mono);
             font-size: 13px;
             white-space: nowrap;
           }
