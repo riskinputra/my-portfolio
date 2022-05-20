@@ -6,12 +6,14 @@
 :root {
   --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
   --navy: #2D4059;
+  --navy-shadow: rgba(9, 26, 47, 0.7);
   --orange: #FFB400;
-  --orange-shadow: rgba(255, 180, 0, .5);
+  --orange-shadow: rgba(255, 180, 0, .8);
   --white: #F6F6F6;
   --red: #EA5455;
   --black: #000000;
   --gray: #6e6e72;
+  --gray-light: #98989a;
   --font-base: 'Roboto', sans-serif;
   --font-mono: 'Space Mono', monospace;
 }

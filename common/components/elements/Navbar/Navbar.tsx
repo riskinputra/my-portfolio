@@ -16,11 +16,11 @@ const Navbar = () => {
      { 
       path: 'work',
       label: 'Work'
-     },
-     { 
-      path: 'contact',
-      label: 'Contact'
      }
+    //  { 
+    //   path: 'contact',
+    //   label: 'Contact'
+    //  }
   ]
 
   return (
